@@ -32,7 +32,7 @@ export default function Home() {
 
                 <div className="flex flex-col gap-1">
                     <div className="flex flex-col">
-                        <div className="flex gap-2">
+                        <div className="flex gap-2 text-lg">
                             <div className="font-bold">sam</div>
                             <div className="font-bold">[Samuel Marks]</div>
                         </div>
