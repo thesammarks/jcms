@@ -28,7 +28,7 @@ export default function Home() {
                     <IconCode stroke="1.5" color="#44403c" width={20} height={20}/>
                 </div>
 
-                <div className="font-[family-name:var(--font-geist-mono)]">200 OK</div>
+                <div>200 OK</div>
 
                 <div className="flex flex-col gap-1">
                     <div className="flex flex-col">
