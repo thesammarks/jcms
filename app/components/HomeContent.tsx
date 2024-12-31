@@ -17,7 +17,7 @@ export default function HomeContent() {
                     <div>[Samuel Marks]</div>
                 </div>
             </div>
-            <LinkCopy displayText="sam@justcallmesam.com" url="mailto:samuel@justcallmesam.com" />
+            <LinkCopy displayText="sam@justcallmesam.com" url="mailto:sam@justcallmesam.com" />
             <BulletedList items={items} />
         </div>
     );
