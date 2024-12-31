@@ -7,7 +7,7 @@ export default function Home() {
             flex items-center max-md:items-start justify-center
             min-h-screen w-full
             font-[family-name:var(--font-geist-mono)]
-            text-neutral-800
+            text-neutral-600
         ">
             <div className="
                 flex flex-col gap-5 justify-center
