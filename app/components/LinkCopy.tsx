@@ -13,7 +13,7 @@ export default function LinkCopy(props: LinkCopyProps) {
     const copyText = (props.copyText) ? props.copyText : props.displayText;
 
     return (
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2.5">
             <a className="text-blue-500" href={props.url}>{props.displayText}</a>
             <Icon
                 icon={IconCopy}
