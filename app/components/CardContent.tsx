@@ -15,11 +15,9 @@ export default function CardContent() {
             <Text>/card - 200 OK</Text>
             <div className="flex flex-col gap-1.5">
                 <div className="flex flex-col">
-                    <div className="flex flex-col">
-                        <div className="flex gap-2">
-                            <Text size="lg" fw={700}>Sam</Text>
-                            <Text size="lg" fw={700}>[Samuel Marks]</Text>
-                        </div>
+                    <div className="flex gap-2">
+                        <Text size="lg" fw={700}>Sam</Text>
+                        <Text size="lg" fw={700}>[Samuel Marks]</Text>
                     </div>
                     <LinkCopy displayText="sam@justcallmesam.com" url="mailto:sam@justcallmesam.com"/>
                 </div>

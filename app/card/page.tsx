@@ -5,8 +5,9 @@ import CardContent from "@/app/components/CardContent";
 export default function App() {
     return (
         <div className="
-            flex justify-center items-center max-md:items-start
-            min-h-screen w-full text-neutral-300
+            flex justify-center
+            items-center max-md:items-start
+            min-h-screen w-full
         ">
             <Card
                 shadow="sm"
