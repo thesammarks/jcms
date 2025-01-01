@@ -1,3 +1,5 @@
+import { Text } from '@mantine/core';
+
 interface BulletedListProps {
     items: string[],
 }
@@ -14,7 +16,7 @@ export default function BulletedList(props: BulletedListProps) {
         <ul className="list-disc ml-4">
             {props.items.map((item, index) => (
                 <li key={index} className={listItemProps}>
-                    {item}
+                    <Text>{item}</Text>
                 </li>
             ))}
         </ul>

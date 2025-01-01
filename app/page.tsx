@@ -1,3 +1,4 @@
+import { Text } from '@mantine/core';
 import Icons from "@/app/components/Icons";
 import HomeContent from "@/app/components/HomeContent";
 
@@ -6,7 +7,6 @@ export default function Home() {
         <div className="
             flex items-center max-md:items-start justify-center
             min-h-screen w-full
-            font-[family-name:var(--font-geist-mono)]
             text-neutral-600
         ">
             <div className="
@@ -16,7 +16,7 @@ export default function Home() {
                 w-[450px] max-w-[85%] max-md:mt-10
             ">
                 <Icons />
-                <div>200 OK</div>
+                <Text>200 OK</Text>
                 <HomeContent />
             </div>
         </div>

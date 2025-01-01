@@ -1,7 +1,28 @@
 'use client';
 
 import { createTheme } from '@mantine/core';
+import { Geist, Geist_Mono } from "next/font/google";
+
+const geistSans = Geist({
+    variable: "--font-geist-sans",
+    subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+    variable: "--font-geist-mono",
+    subsets: ["latin"],
+});
 
 export const theme = createTheme({
-    /* mantine theme default overrides */
+    fontFamily: geistSans.style.fontFamily,
+    fontFamilyMonospace: geistMono.style.fontFamily,
+    components: {
+        Text: {
+            styles: {
+                root: {
+                    fontFamily: geistMono.style.fontFamily,
+                },
+            },
+        },
+    },
 });
