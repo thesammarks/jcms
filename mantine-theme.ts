@@ -21,6 +21,8 @@ export const theme = createTheme({
             styles: {
                 root: {
                     fontFamily: geistMono.style.fontFamily,
+                    letterSpacing: "0.025em",
+                    color: "#525252"
                 },
             },
         },
