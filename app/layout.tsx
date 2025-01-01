@@ -3,7 +3,7 @@ import "./globals.css";
 import Providers from "@/app/providers";
 
 export const metadata: Metadata = {
-  title: "@/sam",
+  title: "@/sam/card",
   description: "A landing page for me, Sam.",
 };
 
