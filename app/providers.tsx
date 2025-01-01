@@ -10,7 +10,7 @@ interface ProvidersProps {
 
 const Providers = ({ children }: ProvidersProps) => {
     return (
-        <MantineProvider theme={theme}>
+        <MantineProvider defaultColorScheme="auto" theme={theme}>
             {children}
         </MantineProvider>
     );

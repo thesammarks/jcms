@@ -1,6 +1,6 @@
 'use client';
 
-import { createTheme } from '@mantine/core';
+import { colorsTuple, createTheme } from '@mantine/core';
 import { Geist, Geist_Mono } from "next/font/google";
 
 const geistSans = Geist({
@@ -16,13 +16,18 @@ const geistMono = Geist_Mono({
 export const theme = createTheme({
     fontFamily: geistSans.style.fontFamily,
     fontFamilyMonospace: geistMono.style.fontFamily,
+    colors: {
+        neutral_light: colorsTuple('#f5f5f5'),
+        neutral_dark: colorsTuple('#57534e'),
+        blue: colorsTuple('#3b82f6'),
+    },
     components: {
         Text: {
             styles: {
                 root: {
                     fontFamily: geistMono.style.fontFamily,
                     letterSpacing: "0.025em",
-                    color: "#525252"
+                    color: "neutral_dark",
                 },
             },
         },

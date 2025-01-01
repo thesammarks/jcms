@@ -3,6 +3,7 @@ import "./globals.css";
 import Providers from "@/app/providers";
 import '@mantine/core/styles.layer.css';
 import '@mantine/dates/styles.layer.css';
+import { ColorSchemeScript, mantineHtmlProps } from '@mantine/core';
 
 export const metadata: Metadata = {
     title: "@/sam/card",
@@ -15,7 +16,10 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="en" {...mantineHtmlProps}>
+            <head>
+                <ColorSchemeScript />
+            </head>
             <body>
                 <Providers>
                     {children}

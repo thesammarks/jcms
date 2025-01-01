@@ -19,16 +19,15 @@ export default function LinkCopy(props: LinkCopyProps) {
             <CopyButton value={config.EMAIL_ADDRESS} timeout={2000}>
                 {({ copied, copy }) => (
                     <Tooltip
-                        className={copied ? "text-blue-500" : "text-neutral-600"}
+                        color={copied ? "blue" : "neutral_dark"}
                         label={copied ?
-                            <Text c="#f5f5f5" fw={700} size="xs">Copied</Text>
-                            : <Text c="#f5f5f5" fw={700} size="xs">Copy</Text>
+                            <Text c="neutral_light" fw={700} size="xs">Copied</Text>
+                            : <Text c="neutral_light" fw={700} size="xs">Copy</Text>
                         }
-                        color="currentColor"
                         position="right"
                         withArrow
                     >
-                        <ActionIcon className="text-neutral-600" variant="subtle" onClick={copy}>
+                        <ActionIcon color="neutral_dark" variant="subtle" onClick={copy}>
                             {copied ? <IconCheck width={14} /> : <IconCopy width={14} />}
                         </ActionIcon>
                     </Tooltip>
