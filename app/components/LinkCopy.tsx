@@ -1,8 +1,8 @@
 'use client'
 
-import { Text } from '@mantine/core';
-import Icon from "@/app/components/Icon";
-import { IconCopy } from "@tabler/icons-react";
+import { ActionIcon, CopyButton, Text, Tooltip } from '@mantine/core';
+import { IconCheck, IconCopy } from "@tabler/icons-react";
+import config from "@/config";
 
 interface LinkCopyProps {
     displayText: string;
@@ -11,19 +11,29 @@ interface LinkCopyProps {
 };
 
 export default function LinkCopy(props: LinkCopyProps) {
-    const copyText = (props.copyText) ? props.copyText : props.displayText;
-
     return (
         <div className="flex items-center gap-2.5">
             <a className="text-blue-500" href={props.url}>
                 <Text>{props.displayText}</Text>
             </a>
-            <Icon
-                icon={IconCopy}
-                onPress={() => navigator.clipboard.writeText(copyText)}
-                width={16}
-                height={16}
-            />
+            <CopyButton value={config.EMAIL_ADDRESS} timeout={2000}>
+                {({ copied, copy }) => (
+                    <Tooltip
+                        className={copied ? "text-emerald-600" : "text-neutral-600"}
+                        label={copied ?
+                            <Text fw={700} className="text-neutral-100" size="xs">Copied</Text>
+                            : <Text fw={700} className="text-neutral-100" size="xs">Copy</Text>
+                        }
+                        color="currentColor"
+                        position="right"
+                        withArrow
+                    >
+                        <ActionIcon className="text-neutral-600" variant="subtle" onClick={copy}>
+                            {copied ? <IconCheck width={14} /> : <IconCopy width={14} />}
+                        </ActionIcon>
+                    </Tooltip>
+                )}
+            </CopyButton>
         </div>
     );
 }

@@ -1,23 +1,23 @@
-import { Card, Text } from '@mantine/core';
+import { Card } from '@mantine/core';
 import Icons from "@/app/components/Icons";
-import HomeContent from "@/app/components/HomeContent";
+import CardContent from "@/app/components/CardContent";
 
 export default function Home() {
     return (
         <div className="
-            flex items-center max-md:items-start justify-center
-            min-h-screen w-full
-            text-neutral-600
+            flex justify-center items-center max-md:items-start
+            min-h-screen w-full text-neutral-300
         ">
-            <Card className="
-                flex flex-col gap-5 justify-center
-                relative p-8
-                border border-neutral-300
-                w-[450px] max-w-[85%] max-md:mt-10
-            ">
+            <Card
+                shadow="sm"
+                padding="xl"
+                className="
+                    relative overflow-visible
+                    w-[450px] max-w-[85%] max-md:mt-10
+                    border border-neutral-300
+                ">
                 <Icons />
-                <Text>/card - 200 OK</Text>
-                <HomeContent />
+                <CardContent />
             </Card>
         </div>
     );

@@ -6,7 +6,7 @@ import config from "@/config";
 
 export default function Icons() {
     return (
-        <div className="flex gap-2.5 absolute top-[105%] right-2">
+        <div className="absolute top-[105%] right-2 flex gap-2.5">
             <Icon
                 icon={IconBrandLinkedin}
                 onPress={() => window.open(config.LINKEDIN_URL, '_blank')}
