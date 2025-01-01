@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "./sam",
+  title: "@/sam",
   description: "A landing page for me, Sam.",
 };
 
