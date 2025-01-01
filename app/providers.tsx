@@ -1,7 +1,8 @@
 'use client'
 
-import { NextUIProvider } from '@nextui-org/react';
-import { ReactNode } from 'react';
+import { MantineProvider } from '@mantine/core';
+import React, { ReactNode } from 'react';
+import { theme } from '@/mantine-theme';
 
 interface ProvidersProps {
     children: ReactNode;
@@ -9,9 +10,9 @@ interface ProvidersProps {
 
 const Providers = ({ children }: ProvidersProps) => {
     return (
-        <NextUIProvider>
+        <MantineProvider theme={theme}>
             {children}
-        </NextUIProvider>
+        </MantineProvider>
     );
 };
 
