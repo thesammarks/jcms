@@ -14,7 +14,7 @@ export default function LinkCopy(props: LinkCopyProps) {
     return (
         <div className="flex items-center gap-2.5">
             <a className="text-blue-500" href={props.url}>
-                <Text>{props.displayText}</Text>
+                <Text fw={700}>{props.displayText}</Text>
             </a>
             <CopyButton value={config.EMAIL_ADDRESS} timeout={2000}>
                 {({ copied, copy }) => (
