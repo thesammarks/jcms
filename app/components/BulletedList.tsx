@@ -7,7 +7,7 @@ interface BulletedListProps {
 export default function BulletedList(props: BulletedListProps) {
 
     const listItemProps = `
-        relative flex items-center pl-4
+        relative flex items-start pl-4
         before:content-['•'] before:absolute
         before:left-0 before:font-bold
     `;
