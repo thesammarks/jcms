@@ -13,7 +13,7 @@ export default function ThemeControl() {
             text-neutral-500 dark:text-neutral-400
         ">
             <div
-                className="relative flex justify-center items-center w-[22px] h-[22px] hover:text-blue-500"
+                className="relative flex justify-center items-center w-[22px] h-[22px] lg:hover:text-blue-500"
                 onClick={() => {setColorScheme(colorScheme === "dark" ? "light" : "dark")}}
             >
                 <Icon

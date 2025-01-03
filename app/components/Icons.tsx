@@ -18,35 +18,35 @@ export default function Icons() {
         ">
             <Icon
                 icon={IconBrandLinkedinFilled}
-                className="hover:text-blue-500"
+                className="lg:hover:text-blue-500"
                 onPress={() => window.open(config.LINKEDIN_URL, '_blank')}
                 width={22}
                 height={22}
             />
             <Icon
                 icon={IconBrandGithubFilled}
-                className="hover:text-blue-500"
+                className="lg:hover:text-blue-500"
                 onPress={() => window.open(config.GITHUB_URL, '_blank')}
                 width={22}
                 height={22}
             />
             <Icon
                 icon={IconBrandInstagramFilled}
-                className="hover:text-blue-500"
+                className="lg:hover:text-blue-500"
                 onPress={() => window.open(config.INSTAGRAM_URL, '_blank')}
                 width={22}
                 height={22}
             />
             <Icon
                 icon={IconMailFilled}
-                className="hover:text-blue-500"
+                className="lg:hover:text-blue-500"
                 onPress={() => window.open(config.EMAIL_URL)}
                 width={22}
                 height={22}
             />
             <Icon
                 icon={IconCodeCircleFilled}
-                className="hover:text-blue-500"
+                className="lg:hover:text-blue-500"
                 onPress={() => window.open(config.SOURCE_CODE_URL, '_blank')}
                 width={22}
                 height={22}
