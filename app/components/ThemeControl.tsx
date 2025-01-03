@@ -12,22 +12,25 @@ export default function ThemeControl() {
             absolute top-[105%] left-2 flex gap-2.5
             text-neutral-500 dark:text-neutral-400
         ">
-            {colorScheme == "dark" ?
+            <div
+                className="hover:text-blue-500"
+                onClick={() => {setColorScheme(colorScheme === "dark" ? "light" : "dark")}}
+            >
                 <Icon
                     icon={IconMoonFilled}
-                    className={`absolute className="hover:text-blue-500"`}
-                    onPress={() => setColorScheme("light")}
+                    className="absolute opacity-100 dark:opacity-0"
+                    onPress={() => null}
                     width={18}
                     height={18}
-                /> :
+                />
                 <Icon
                     icon={IconSunFilled}
-                    className={`absolute className="hover:text-blue-500"`}
-                    onPress={() => setColorScheme("dark")}
+                    className="absolute opacity-0 dark:opacity-100"
+                    onPress={() => null}
                     width={20}
                     height={20}
                 />
-            }
+            </div>
         </div>
     );
 }
