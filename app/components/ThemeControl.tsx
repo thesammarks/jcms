@@ -9,11 +9,12 @@ export default function ThemeControl() {
 
     return (
         <div className="
-            absolute top-[105%] left-2 flex gap-2.5
+            absolute top-[105%] left-2
             text-neutral-500 dark:text-neutral-400
+            hover:text-blue-500
         ">
             <div
-                className="hover:text-blue-500"
+                className="relative justify-center items-center flex w-[22] h-[22]"
                 onClick={() => {setColorScheme(colorScheme === "dark" ? "light" : "dark")}}
             >
                 <Icon
