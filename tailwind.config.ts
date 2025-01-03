@@ -7,5 +7,5 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {},
-  darkMode: "class",
+  darkMode: ['class', '[data-mantine-color-scheme="dark"]'],
 } satisfies Config;

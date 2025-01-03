@@ -14,8 +14,9 @@ export default function App() {
                 padding="xl"
                 className="
                     relative overflow-visible
-                    w-[450px] max-w-[85%] max-md:mt-10
-                    border border-neutral-300
+                    w-[85%] max-w-[450px] max-md:mt-10
+                    border border-neutral-300 dark:border-neutral-600
+                    text-black dark:text-neutral-300
                 ">
                 <Icons />
                 <CardContent />

@@ -3,6 +3,7 @@
 import { ActionIcon, CopyButton, Text, Tooltip } from '@mantine/core';
 import { IconCheck, IconCopy } from "@tabler/icons-react";
 import config from "@/config";
+import Icon from "@/app/components/Icon";
 
 interface LinkCopyProps {
     displayText: string;
@@ -14,21 +15,40 @@ export default function LinkCopy(props: LinkCopyProps) {
     return (
         <div className="flex items-center gap-2.5">
             <a href={props.url}>
-                <Text c="#3b82f6" fw={700}>{props.displayText}</Text>
+                <Text className="text-blue-500" fw={700}>
+                    {props.displayText}
+                </Text>
             </a>
             <CopyButton value={config.EMAIL_ADDRESS} timeout={2000}>
                 {({ copied, copy }) => (
                     <Tooltip
-                        color={copied ? "blue" : "neutral_dark"}
+                        className="bg-neutral-500 dark:bg-neutral-300"
                         label={copied ?
-                            <Text c="neutral_light" fw={700} size="xs">Copied</Text>
-                            : <Text c="neutral_light" fw={700} size="xs">Copy</Text>
+                            <Text className="text-neutral-100 dark:text-neutral-600" fw={700} size="xs">Copied</Text>
+                            : <Text className="text-neutral-100 dark:text-neutral-600" fw={700} size="xs">Copy</Text>
                         }
                         position="right"
                         withArrow
                     >
-                        <ActionIcon color="neutral_dark" variant="subtle" onClick={copy}>
-                            {copied ? <IconCheck width={14} /> : <IconCopy width={14} />}
+                        <ActionIcon
+                            className="text-neutral-500 dark:text-neutral-400"
+                            variant="subtle"
+                            onClick={copy}
+                        >
+                            <Icon
+                                icon={IconCheck}
+                                className={`absolute ${copied ? "opacity-100" : "opacity-0"}`}
+                                onPress={() => null}
+                                width={20}
+                                height={20}
+                            />
+                            <Icon
+                                icon={IconCopy}
+                                className={`absolute ${copied ? "opacity-0" : "opacity-100"}`}
+                                onPress={() => null}
+                                width={20}
+                                height={20}
+                            />
                         </ActionIcon>
                     </Tooltip>
                 )}
