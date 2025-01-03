@@ -14,7 +14,7 @@ export default function ThemeControl() {
             hover:text-blue-500
         ">
             <div
-                className="relative justify-center items-center flex w-[22] h-[22]"
+                className="relative justify-center items-center flex w-[22px] h-[22px]"
                 onClick={() => {setColorScheme(colorScheme === "dark" ? "light" : "dark")}}
             >
                 <Icon
