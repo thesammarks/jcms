@@ -11,7 +11,6 @@ export default function ThemeControl() {
         <div className="
             absolute top-[105%] left-2
             text-neutral-500 dark:text-neutral-400
-            hover:text-blue-500
         ">
             <div
                 className="relative justify-center items-center flex w-[22px] h-[22px]"
@@ -19,14 +18,14 @@ export default function ThemeControl() {
             >
                 <Icon
                     icon={IconMoonFilled}
-                    className="absolute opacity-100 dark:opacity-0"
+                    className="absolute opacity-100 dark:opacity-0 hover:text-blue-500"
                     onPress={() => null}
                     width={18}
                     height={18}
                 />
                 <Icon
                     icon={IconSunFilled}
-                    className="absolute opacity-0 dark:opacity-100"
+                    className="absolute opacity-0 dark:opacity-100 hover:text-blue-500"
                     onPress={() => null}
                     width={20}
                     height={20}
