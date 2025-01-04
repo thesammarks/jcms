@@ -15,7 +15,7 @@ export default function ThemeControl() {
             <div
                 className="
                     relative w-[32px] h-[32px] group
-                    flex lg:hover:text-blue-500
+                    flex hover:text-blue-500
                 "
                 onClick={() => {setColorScheme(colorScheme === "dark" ? "light" : "dark")}}
             >
