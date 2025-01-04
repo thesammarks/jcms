@@ -20,7 +20,7 @@ export default function Icons() {
                 icon={IconBrandLinkedinFilled}
                 className="
                     w-[32px] h-[32px] hover:text-blue-500
-                    lg:group-hover:w-[42px] lg:group-hover:h-[42px]
+                    lg:group-hover:w-[36px] lg:group-hover:h-[36px]
                 "
                 onPress={() => window.open(config.LINKEDIN_URL, '_blank')}
             />
@@ -28,7 +28,7 @@ export default function Icons() {
                 icon={IconBrandGithubFilled}
                 className="
                     w-[32px] h-[32px] hover:text-blue-500
-                    lg:group-hover:w-[42px] lg:group-hover:h-[42px]
+                    lg:group-hover:w-[36px] lg:group-hover:h-[36px]
                 "
                 onPress={() => window.open(config.GITHUB_URL, '_blank')}
             />
@@ -36,7 +36,7 @@ export default function Icons() {
                 icon={IconBrandInstagramFilled}
                 className="
                     w-[32px] h-[32px] hover:text-blue-500
-                    lg:group-hover:w-[42px] lg:group-hover:h-[42px]
+                    lg:group-hover:w-[36px] lg:group-hover:h-[36px]
                 "
                 onPress={() => window.open(config.INSTAGRAM_URL, '_blank')}
             />
@@ -44,7 +44,7 @@ export default function Icons() {
                 icon={IconMailFilled}
                 className="
                     w-[32px] h-[32px] hover:text-blue-500
-                    lg:group-hover:w-[42px] lg:group-hover:h-[42px]
+                    lg:group-hover:w-[36px] lg:group-hover:h-[36px]
                 "
                 onPress={() => window.open(config.EMAIL_URL)}
             />
@@ -52,7 +52,7 @@ export default function Icons() {
                 icon={IconCodeCircleFilled}
                 className="
                     w-[32px] h-[32px] hover:text-blue-500
-                    lg:group-hover:w-[42px] lg:group-hover:h-[42px]
+                    lg:group-hover:w-[36px] lg:group-hover:h-[36px]
                 "
                 onPress={() => window.open(config.SOURCE_CODE_URL, '_blank')}
             />

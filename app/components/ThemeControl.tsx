@@ -24,7 +24,7 @@ export default function ThemeControl() {
                     className="
                         absolute w-[32px] h-[32px]
                         opacity-100 dark:opacity-0
-                        lg:group-hover:w-[42px] lg:group-hover:h-[42px]
+                        lg:group-hover:w-[36px] lg:group-hover:h-[36px]
                     "
                     onPress={() => null}
                 />
@@ -33,7 +33,7 @@ export default function ThemeControl() {
                     className="
                         absolute w-[32px] h-[32px]
                         opacity-0 dark:opacity-100
-                        lg:group-hover:w-[42px] lg:group-hover:h-[42px]
+                        lg:group-hover:w-[36px] lg:group-hover:h-[36px]
                     "
                     onPress={() => null}
                 />
