@@ -15,17 +15,17 @@ export default function LinkCopy(props: LinkCopyProps) {
     return (
         <div className="flex items-center gap-2.5">
             <a href={props.url}>
-                <Text className="text-blue-500" fw={700}>
+                <Text className="text-blue-500 text-lg md:text-xl" fw={700}>
                     {props.displayText}
                 </Text>
             </a>
             <CopyButton value={config.EMAIL_ADDRESS} timeout={2000}>
                 {({ copied, copy }) => (
                     <Tooltip
-                        className="bg-neutral-500 dark:bg-neutral-300"
+                        className="bg-neutral-500 dark:bg-neutral-300 text-neutral-100 dark:text-neutral-600"
                         label={copied ?
-                            <Text className="text-neutral-100 dark:text-neutral-600" fw={700} size="xs">Copied</Text>
-                            : <Text className="text-neutral-100 dark:text-neutral-600" fw={700} size="xs">Copy</Text>
+                            <Text fw={700} size="xs">Copied</Text>
+                            : <Text fw={700} size="xs">Copy</Text>
                         }
                         position="right"
                         withArrow

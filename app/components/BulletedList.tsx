@@ -16,7 +16,7 @@ export default function BulletedList(props: BulletedListProps) {
         <ul className="list-disc ml-4">
             {props.items.map((item, index) => (
                 <li key={index} className={listItemProps}>
-                    <Text>{item}</Text>
+                    <Text className="md:text-lg">{item}</Text>
                 </li>
             ))}
         </ul>
