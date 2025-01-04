@@ -13,7 +13,7 @@ export default function ThemeControl() {
                 flex relative w-[32px] h-[32px]
                 lg:hover:w-[36px] lg:hover:h-[36px]
                 text-neutral-500 dark:text-neutral-400
-                group hover:text-blue-500
+                group lg:hover:text-blue-500
                 transition-all duration-300 ease-in-out
             "
             onClick={() => {setColorScheme(colorScheme === "dark" ? "light" : "dark")}}
