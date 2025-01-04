@@ -14,7 +14,7 @@ export default function Card() {
                 padding="xl"
                 className="
                     relative overflow-visible
-                    w-[85%] max-w-[450px] max-md:mt-10
+                    w-[85%] max-w-xl max-md:mt-10
                     border border-neutral-300 dark:border-neutral-600
                     text-black dark:text-neutral-300
                 ">
