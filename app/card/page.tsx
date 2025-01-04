@@ -1,7 +1,6 @@
-import { Card as MantineCard } from '@mantine/core';
+import {Card as MantineCard} from '@mantine/core';
 import Icons from "@/app/components/Icons";
 import CardContent from "@/app/components/CardContent";
-import ThemeControl from "@/app/components/ThemeControl";
 
 export default function Card() {
     return (
@@ -20,7 +19,6 @@ export default function Card() {
                     text-black dark:text-neutral-300
                 ">
                 <Icons />
-                <ThemeControl />
                 <CardContent />
             </MantineCard>
         </div>
