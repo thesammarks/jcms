@@ -9,26 +9,33 @@ export default function ThemeControl() {
 
     return (
         <div className="
-            absolute top-[105%] left-2
+            absolute top-[100%] p-4 left-0
             text-neutral-500 dark:text-neutral-400
         ">
             <div
-                className="relative flex justify-center items-center w-[22px] h-[22px] lg:hover:text-blue-500"
+                className="
+                    relative w-[32px] h-[32px] group
+                    flex lg:hover:text-blue-500
+                "
                 onClick={() => {setColorScheme(colorScheme === "dark" ? "light" : "dark")}}
             >
                 <Icon
                     icon={IconMoonFilled}
-                    className="absolute opacity-100 dark:opacity-0"
+                    className="
+                        absolute w-[32px] h-[32px]
+                        opacity-100 dark:opacity-0
+                        lg:group-hover:w-[42px] lg:group-hover:h-[42px]
+                    "
                     onPress={() => null}
-                    width={18}
-                    height={18}
                 />
                 <Icon
                     icon={IconSunFilled}
-                    className="absolute opacity-0 dark:opacity-100"
+                    className="
+                        absolute w-[32px] h-[32px]
+                        opacity-0 dark:opacity-100
+                        lg:group-hover:w-[42px] lg:group-hover:h-[42px]
+                    "
                     onPress={() => null}
-                    width={20}
-                    height={20}
                 />
             </div>
         </div>

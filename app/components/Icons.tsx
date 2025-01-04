@@ -13,43 +13,48 @@ import config from "@/config";
 export default function Icons() {
     return (
         <div className="
-            absolute top-[105%] right-2 flex gap-2
+            absolute top-[100%] right-0 p-4 flex gap-2 group
             text-neutral-500 dark:text-neutral-400
         ">
             <Icon
                 icon={IconBrandLinkedinFilled}
-                className="lg:hover:text-blue-500"
+                className="
+                    w-[32px] h-[32px] lg:hover:text-blue-500
+                    lg:group-hover:w-[42px] lg:group-hover:h-[42px]
+                "
                 onPress={() => window.open(config.LINKEDIN_URL, '_blank')}
-                width={22}
-                height={22}
             />
             <Icon
                 icon={IconBrandGithubFilled}
-                className="lg:hover:text-blue-500"
+                className="
+                    w-[32px] h-[32px] lg:hover:text-blue-500
+                    lg:group-hover:w-[42px] lg:group-hover:h-[42px]
+                "
                 onPress={() => window.open(config.GITHUB_URL, '_blank')}
-                width={22}
-                height={22}
             />
             <Icon
                 icon={IconBrandInstagramFilled}
-                className="lg:hover:text-blue-500"
+                className="
+                    w-[32px] h-[32px] lg:hover:text-blue-500
+                    lg:group-hover:w-[42px] lg:group-hover:h-[42px]
+                "
                 onPress={() => window.open(config.INSTAGRAM_URL, '_blank')}
-                width={22}
-                height={22}
             />
             <Icon
                 icon={IconMailFilled}
-                className="lg:hover:text-blue-500"
+                className="
+                    w-[32px] h-[32px] lg:hover:text-blue-500
+                    lg:group-hover:w-[42px] lg:group-hover:h-[42px]
+                "
                 onPress={() => window.open(config.EMAIL_URL)}
-                width={22}
-                height={22}
             />
             <Icon
                 icon={IconCodeCircleFilled}
-                className="lg:hover:text-blue-500"
+                className="
+                    w-[32px] h-[32px] lg:hover:text-blue-500
+                    lg:group-hover:w-[42px] lg:group-hover:h-[42px]
+                "
                 onPress={() => window.open(config.SOURCE_CODE_URL, '_blank')}
-                width={22}
-                height={22}
             />
         </div>
     );

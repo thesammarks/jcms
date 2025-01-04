@@ -1,16 +1,16 @@
-import { Card } from '@mantine/core';
+import { Card as MantineCard } from '@mantine/core';
 import Icons from "@/app/components/Icons";
 import CardContent from "@/app/components/CardContent";
 import ThemeControl from "@/app/components/ThemeControl";
 
-export default function App() {
+export default function Card() {
     return (
         <div className="
             flex justify-center
             items-center max-md:items-start
             min-h-screen w-full
         ">
-            <Card
+            <MantineCard
                 shadow="sm"
                 padding="xl"
                 className="
@@ -22,7 +22,7 @@ export default function App() {
                 <Icons />
                 <ThemeControl />
                 <CardContent />
-            </Card>
+            </MantineCard>
         </div>
     );
 }

@@ -37,17 +37,13 @@ export default function LinkCopy(props: LinkCopyProps) {
                         >
                             <Icon
                                 icon={IconCheck}
-                                className={`absolute ${copied ? "opacity-100" : "opacity-0"}`}
+                                className={`absolute w-[20px] ${copied ? "opacity-100" : "opacity-0"}`}
                                 onPress={() => null}
-                                width={20}
-                                height={20}
                             />
                             <Icon
                                 icon={IconCopy}
-                                className={`absolute ${copied ? "opacity-0" : "opacity-100"}`}
+                                className={`absolute w-[20px] ${copied ? "opacity-0" : "opacity-100"}`}
                                 onPress={() => null}
-                                width={20}
-                                height={20}
                             />
                         </ActionIcon>
                     </Tooltip>
