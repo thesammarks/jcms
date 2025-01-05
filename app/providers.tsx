@@ -9,13 +9,11 @@ interface ProvidersProps {
     children: ReactNode;
 }
 
-const Providers = ({ children }: ProvidersProps) => {
+export default function Providers({ children }: ProvidersProps) {
     return (
         <MantineProvider defaultColorScheme="auto" theme={theme}>
             {children}
             <Analytics />
         </MantineProvider>
     );
-};
-
-export default Providers;
+}

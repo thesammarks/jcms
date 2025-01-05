@@ -1,4 +1,4 @@
-import { Text } from '@mantine/core';
+import {Text} from '@mantine/core';
 
 interface BulletedListProps {
     items: string[],
@@ -21,4 +21,4 @@ export default function BulletedList(props: BulletedListProps) {
             ))}
         </ul>
     );
-};
+}
