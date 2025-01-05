@@ -19,7 +19,7 @@ export default function LinkCopy(props: LinkCopyProps) {
                     {props.displayText}
                 </Text>
             </a>
-            <CopyButton value={config.EMAIL_ADDRESS} timeout={2000}>
+            <CopyButton value={config.AUTHOR_EMAIL_ADDRESS} timeout={2000}>
                 {({ copied, copy }) => (
                     <Tooltip
                         className="bg-neutral-500 dark:bg-neutral-300 text-neutral-100 dark:text-neutral-600"
