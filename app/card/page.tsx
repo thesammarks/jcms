@@ -1,7 +1,6 @@
 import {Card as MantineCard} from '@mantine/core';
 import Icons from "@/app/components/Icons";
 import CardContent from "@/app/components/CardContent";
-import {SpeedInsights} from "@vercel/speed-insights/next"
 
 export default function Card() {
     return (
@@ -21,7 +20,6 @@ export default function Card() {
                 ">
                 <Icons />
                 <CardContent />
-                <SpeedInsights />
             </MantineCard>
         </div>
     );
