@@ -14,8 +14,7 @@ import ThemeControl from "@/app/components/ThemeControl";
 export default function Icons() {
     return (
         <div className="
-            absolute top-[100%] right-0 m-4
-            flex gap-2
+            absolute top-[100%] right-0 m-4 flex gap-2
             text-neutral-500 dark:text-neutral-400
         ">
             <Icon
@@ -48,7 +47,7 @@ export default function Icons() {
                     w-[32px] h-[32px] lg:hover:text-blue-500
                     lg:hover:w-[36px] lg:hover:h-[36px]
                 "
-                onPress={() => window.open(config.EMAIL_URL)}
+                onPress={() => window.open(config.AUTHOR_EMAIL_ADDRESS)}
             />
             <Icon
                 icon={IconCodeCircleFilled}
