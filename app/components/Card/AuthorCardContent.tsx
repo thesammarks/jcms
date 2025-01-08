@@ -1,9 +1,9 @@
 import {Text} from '@mantine/core';
-import BulletedList from "@/app/components/BulletedList";
+import BulletedList from "@/app/components/Card/BulletedList";
 import LinkCopy from "@/app/components/LinkCopy";
 import config from "@/config";
 
-export default function CardContent() {
+export default function AuthorCardContent() {
     return (
         <div className="flex flex-col gap-5">
             <Text className="md:text-lg">/card - 200 OK</Text>

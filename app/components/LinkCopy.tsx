@@ -3,7 +3,7 @@
 import {ActionIcon, CopyButton, Text, Tooltip} from '@mantine/core';
 import {IconCheck, IconCopy} from "@tabler/icons-react";
 import config from "@/config";
-import Icon from "@/app/components/Icon";
+import Icon from "@/app/components/Icons/Icon";
 
 interface LinkCopyProps {
     displayText: string;

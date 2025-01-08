@@ -12,49 +12,36 @@ import config from "@/config";
 import ThemeControl from "@/app/components/ThemeControl";
 
 export default function Icons() {
+    const iconClassName = `
+        w-[32px] h-[32px] lg:hover:text-blue-500
+        lg:hover:scale-110 lg:hover:scale-110
+    `;
+
     return (
-        <div className="
-            absolute top-[100%] right-0 m-4 flex gap-2
-            text-neutral-500 dark:text-neutral-400
-        ">
+        <div className="flex gap-3 text-neutral-500 dark:text-neutral-400">
             <Icon
                 icon={IconBrandLinkedinFilled}
-                className="
-                    w-[32px] h-[32px] lg:hover:text-blue-500
-                    lg:hover:w-[36px] lg:hover:h-[36px]
-                "
+                className={iconClassName}
                 onPress={() => window.open(config.LINKEDIN_URL, '_blank')}
             />
             <Icon
                 icon={IconBrandGithubFilled}
-                className="
-                    w-[32px] h-[32px] lg:hover:text-blue-500
-                    lg:hover:w-[36px] lg:hover:h-[36px]
-                "
+                className={iconClassName}
                 onPress={() => window.open(config.GITHUB_URL, '_blank')}
             />
             <Icon
                 icon={IconBrandInstagramFilled}
-                className="
-                    w-[32px] h-[32px] lg:hover:text-blue-500
-                    lg:hover:w-[36px] lg:hover:h-[36px]
-                "
+                className={iconClassName}
                 onPress={() => window.open(config.INSTAGRAM_URL, '_blank')}
             />
             <Icon
                 icon={IconMailFilled}
-                className="
-                    w-[32px] h-[32px] lg:hover:text-blue-500
-                    lg:hover:w-[36px] lg:hover:h-[36px]
-                "
-                onPress={() => window.open(config.AUTHOR_EMAIL_ADDRESS)}
+                className={iconClassName}
+                onPress={() => window.open(`mailto:${config.AUTHOR_EMAIL_ADDRESS}`, '_blank')}
             />
             <Icon
                 icon={IconCodeCircleFilled}
-                className="
-                    w-[32px] h-[32px] lg:hover:text-blue-500
-                    lg:hover:w-[36px] lg:hover:h-[36px]
-                "
+                className={iconClassName}
                 onPress={() => window.open(config.SOURCE_CODE_URL, '_blank')}
             />
             <ThemeControl />

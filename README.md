@@ -3,6 +3,7 @@
 A landing page for me, Sam.
 
 Next.js `v15.1.2` \
+React `v19.0.0` \
 Mantine `v7.15.0` \
 Tabler Icons `v3.26.0` \
 TailwindCSS `v3.4.1` \

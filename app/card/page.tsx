@@ -1,26 +1,22 @@
-import {Card as MantineCard} from '@mantine/core';
-import Icons from "@/app/components/Icons";
-import CardContent from "@/app/components/CardContent";
+import AuthorCardContent from "@/app/components/Card/AuthorCardContent";
+import Icons from "@/app/components/Icons/Icons";
+import JcmsCard from "@/app/components/Card/JcmsCard";
 
-export default function Card() {
+export default function Page() {
     return (
-        <div className="
-            flex justify-center
-            items-center max-md:items-start
-            min-h-screen w-full
+        <main className="
+            flex flex-col justify-center items-center gap-4
+            min-h-screen w-full max-md:justify-start
         ">
-            <MantineCard
-                shadow="sm"
-                padding="xl"
-                className="
-                    relative overflow-visible
+            <JcmsCard
+                content={AuthorCardContent}
+                className={`
                     w-[85%] max-w-xl max-md:mt-10
                     border border-neutral-300 dark:border-neutral-600
                     text-black dark:text-neutral-300
-                ">
-                <Icons />
-                <CardContent />
-            </MantineCard>
-        </div>
+                `}
+            />
+            <Icons />
+        </main>
     );
 }

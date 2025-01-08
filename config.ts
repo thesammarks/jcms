@@ -2,7 +2,7 @@ const config = {
     BASE_URL: "https://justcallmesam.com",
     APPLICATION_NAME: "Just Call Me Sam",
     APPLICATION_DESCRIPTION: "A landing page for me, Samuel Marks. Just call me Sam.",
-    APPLICATION_KEYWORDS: "Samuel Marks, Sam Marks, Sam, Software Engineer, SWE, Next, Next.JS, Mantine, React, Spring Boot, landing page, home page",
+    APPLICATION_KEYWORDS: "Samuel Marks, Sam Marks, Sam, Software Engineer, SWE, Next, Next.JS, React, Mantine, Tabler icons, UI, API, Spring Boot, Java, landing page, home page",
     AUTHOR_NAME: "Samuel Marks",
     AUTHOR_SHORT_NAME: "Sam",
     CARD_DISPLAY_ITEMS: [
