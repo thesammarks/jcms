@@ -11,7 +11,7 @@ export default function sitemap() {
             priority: 1,
         },
         {
-            url: `${config.BASE_URL}/card`,
+            url: `${config.BASE_URL}/home`,
             lastModified: new Date().toISOString(),
             changeFrequency: 'daily',
             priority: 1,
