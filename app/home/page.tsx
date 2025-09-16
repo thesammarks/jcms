@@ -43,7 +43,7 @@ export default function Home() {
         hidden: {},
         show: {
             transition: {
-                delayChildren: reduce ? 0 : 1.8,
+                delayChildren: reduce ? 0 : 2.4,
                 staggerChildren: reduce ? 0 : 0.12,
             },
         },
@@ -89,10 +89,10 @@ export default function Home() {
                         </Flex>
 
                         <Flex direction={"column"} ml={58} gap={0}>
-                            <MotionDiv variants={fadeUp(1.0)}>
+                            <MotionDiv variants={fadeUp(1.2)}>
                                 <Text fz={18} fw={600} fs={"italic"} mb={2}>Software Engineer</Text>
                             </MotionDiv>
-                            <MotionDiv variants={fadeUp(1.4)}>
+                            <MotionDiv variants={fadeUp(1.6)}>
                                 <Text fz={18} fw={550} mb={16}>sam@capysoft.app</Text>
                             </MotionDiv>
                             <MotionDiv variants={iconRow}>
