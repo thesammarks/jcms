@@ -11,6 +11,7 @@ import {
 import {Easing, motion, useReducedMotion, Variants} from "framer-motion";
 import config from "@/config";
 import LinkNewTab from "@/app/components/utils/LinkNewTab";
+import CopyText from "@/app/components/utils/CopyText";
 import styles from "./page.module.css";
 
 const MotionDiv = motion.div;
@@ -93,7 +94,10 @@ export default function Home() {
                                 <Text fz={18} fw={600} fs={"italic"} mb={2}>Software Engineer</Text>
                             </MotionDiv>
                             <MotionDiv variants={fadeUp(1.6)}>
-                                <Text fz={18} fw={550} mb={16}>sam@capysoft.app</Text>
+                                <Flex align={"center"} mb={16}>
+                                    <Text fz={18} fw={550}>sam@capysoft.app</Text>
+                                    <CopyText copyText={"sam@capysoft.app"}/>
+                                </Flex>
                             </MotionDiv>
                             <MotionDiv variants={iconRow}>
                                 <Flex gap={"xs"}>
