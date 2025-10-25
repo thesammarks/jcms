@@ -4,13 +4,12 @@ import '@mantine/core/styles.layer.css';
 import '@mantine/dates/styles.layer.css';
 import {ColorSchemeScript, mantineHtmlProps} from '@mantine/core';
 import "./globals.css";
-import config from "@/config";
 
 export const metadata: Metadata = {
-    title: config.APPLICATION_NAME,
-    applicationName: config.APPLICATION_NAME,
-    description: config.APPLICATION_DESCRIPTION,
-    metadataBase: new URL(config.BASE_URL),
+    title: process.env.NEXT_PUBLIC_APPLICATION_NAME,
+    applicationName: process.env.NEXT_PUBLIC_APPLICATION_NAME,
+    description: process.env.NEXT_PUBLIC_APPLICATION_DESCRIPTION,
+    metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || "https://sam.capysoft.app"),
     robots: {
         index: true,
         follow: true,
@@ -20,23 +19,23 @@ export const metadata: Metadata = {
         googleBot: "index, follow"
     },
     appleWebApp: {
-        title: config.APPLICATION_NAME,
+        title: process.env.NEXT_PUBLIC_APPLICATION_NAME,
         statusBarStyle: "default",
         capable: true
     },
     openGraph: {
-        siteName: config.APPLICATION_NAME,
+        siteName: process.env.NEXT_PUBLIC_APPLICATION_NAME,
         type: "website",
         locale: "en_US",
-        url: config.BASE_URL,
-        title: config.APPLICATION_NAME,
-        description: config.APPLICATION_DESCRIPTION,
+        url: process.env.NEXT_PUBLIC_BASE_URL,
+        title: process.env.NEXT_PUBLIC_APPLICATION_NAME,
+        description: process.env.NEXT_PUBLIC_APPLICATION_DESCRIPTION,
     },
     twitter: {
         card: "summary",
-        site: config.BASE_URL,
-        title: config.APPLICATION_NAME,
-        description: config.APPLICATION_DESCRIPTION,
+        site: process.env.NEXT_PUBLIC_BASE_URL,
+        title: process.env.NEXT_PUBLIC_APPLICATION_NAME,
+        description: process.env.NEXT_PUBLIC_APPLICATION_DESCRIPTION,
     },
     icons: {
         icon: [
@@ -65,24 +64,24 @@ export default function RootLayout({
                 <ColorSchemeScript />
 
                 {/* Primary Meta Tags */}
-                <title>{config.APPLICATION_NAME}</title>
-                <meta name="description" content={config.APPLICATION_DESCRIPTION}/>
-                <meta name="keywords" content={config.APPLICATION_KEYWORDS}/>
-                <meta name="author" content={config.AUTHOR_NAME}/>
+                <title>{process.env.NEXT_PUBLIC_APPLICATION_NAME}</title>
+                <meta name="description" content={process.env.NEXT_PUBLIC_APPLICATION_DESCRIPTION}/>
+                <meta name="keywords" content={process.env.NEXT_PUBLIC_APPLICATION_KEYWORDS}/>
+                <meta name="author" content={process.env.NEXT_PUBLIC_AUTHOR_NAME}/>
                 <meta name="robots" content="index, follow"/>
                 <meta name="googlebot" content="index, follow"/>
-                <link rel="canonical" href={config.BASE_URL}/>
+                <link rel="canonical" href={process.env.NEXT_PUBLIC_BASE_URL}/>
 
                 {/* Open Graph / Facebook */}
-                <meta property="og:title" content={config.APPLICATION_NAME}/>
-                <meta property="og:description" content={config.APPLICATION_DESCRIPTION}/>
-                <meta property="og:url" content={config.BASE_URL}/>
+                <meta property="og:title" content={process.env.NEXT_PUBLIC_APPLICATION_NAME}/>
+                <meta property="og:description" content={process.env.NEXT_PUBLIC_APPLICATION_DESCRIPTION}/>
+                <meta property="og:url" content={process.env.NEXT_PUBLIC_BASE_URL}/>
                 <meta property="og:type" content="website"/>
 
                 {/* Twitter */}
-                <meta name="twitter:card" content={config.APPLICATION_NAME}/>
-                <meta name="twitter:title" content={config.APPLICATION_NAME}/>
-                <meta name="twitter:description" content={config.APPLICATION_DESCRIPTION}/>
+                <meta name="twitter:card" content={process.env.NEXT_PUBLIC_APPLICATION_NAME}/>
+                <meta name="twitter:title" content={process.env.NEXT_PUBLIC_APPLICATION_NAME}/>
+                <meta name="twitter:description" content={process.env.NEXT_PUBLIC_APPLICATION_DESCRIPTION}/>
 
                 {/* Favicon */}
                 <link rel="icon" href="/favicon.ico"/>
