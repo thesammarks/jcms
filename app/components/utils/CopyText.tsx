@@ -5,7 +5,7 @@ import {IconCheck, IconCopy} from "@tabler/icons-react";
 
 interface CopyTextProps {
     copyText: string;
-};
+}
 
 export default function CopyText(props: CopyTextProps) {
     return (
@@ -17,7 +17,7 @@ export default function CopyText(props: CopyTextProps) {
                     opacity={"90%"}
                     label={copied ? <Text fw={700} size="xs">Copied</Text> : <Text fw={700} size="xs">Copy</Text>}
                 >
-                    <ActionIcon variant="subtle" onClick={copy} bg={"transparent"}>
+                    <ActionIcon variant="subtle" onClick={copy} bg={"transparent"} c={"rgba(245, 246, 248, 0.7)"}>
                         <IconCheck opacity={`${copied ? "90%" : "0"}`} className={`absolute w-[20px]`}/>
                         <IconCopy opacity={`${copied ? "0" : "90%"}`} className={`absolute w-[20px]`}/>
                     </ActionIcon>
