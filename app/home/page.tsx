@@ -2,12 +2,7 @@
 
 import React from "react";
 import {Avatar, BackgroundImage, Flex, Text} from "@mantine/core";
-import {
-    IconBrandGithubFilled,
-    IconBrandInstagramFilled,
-    IconBrandLinkedinFilled,
-    IconMailFilled,
-} from "@tabler/icons-react";
+import {IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconMail} from "@tabler/icons-react";
 import {Easing, motion, useReducedMotion, Variants} from "framer-motion";
 import config from "@/config";
 import LinkNewTab from "@/app/components/utils/LinkNewTab";
@@ -18,10 +13,10 @@ const MotionDiv = motion.div;
 
 export default function Home() {
     const icons: ({ icon: React.ElementType; link: string })[] = [
-        {icon: IconBrandLinkedinFilled, link: config.LINKEDIN_URL},
-        {icon: IconBrandGithubFilled, link: config.GITHUB_URL},
-        {icon: IconBrandInstagramFilled, link: config.INSTAGRAM_URL},
-        {icon: IconMailFilled, link: `mailto:${config.AUTHOR_EMAIL_ADDRESS}`},
+        {icon: IconBrandLinkedin, link: config.LINKEDIN_URL},
+        {icon: IconBrandGithub, link: config.GITHUB_URL},
+        {icon: IconBrandInstagram, link: config.INSTAGRAM_URL},
+        {icon: IconMail, link: `mailto:${config.AUTHOR_EMAIL_ADDRESS}`},
     ];
 
     const reduce = useReducedMotion();
@@ -107,7 +102,7 @@ export default function Home() {
                                             <motion.div
                                                 key={i}
                                                 variants={iconOne}
-                                                whileHover={{y: -2, rotate: 0, scale: 1.06}}
+                                                whileHover={{y: -2, rotate: 10, color: 'red'}}
                                                 whileTap={{scale: 0.96}}
                                                 transition={{duration: 0.18}}
                                             >
